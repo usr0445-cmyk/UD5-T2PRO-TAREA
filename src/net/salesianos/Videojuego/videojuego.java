@@ -13,4 +13,32 @@ public class videojuego {
         this.año = año;
         this.puntuacion = puntuacion;
     }
+
+     public String getTitulo() {
+        return titulo;
+    }
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public int getAño() {
+        return año;
+    }
+    public void setAño(int año) {
+        this.año = año;
+    }
+
+    public int getPuntuacion() {
+        return puntuacion;
+    }
+    public void setPuntuacion(int puntuacion) {
+        this.puntuacion = puntuacion;
+    }
 }
