@@ -10,4 +10,16 @@ public class listaInteligente {
         lista.add(v);
     }
 
+    public void editarVideojuego(int index, videojuego v){
+        if(index >= 0 && index < lista.size()){
+            lista.set(index, v);
+        }
+    }
+
+    public void eliminarVideojuego(int index){
+        if(index >= 0 && index < lista.size()){
+            lista.remove(index);
+        }
+    }
+
 }
