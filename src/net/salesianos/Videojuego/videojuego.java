@@ -41,4 +41,10 @@ public class videojuego {
     public void setPuntuacion(int puntuacion) {
         this.puntuacion = puntuacion;
     }
+    
+    @Override
+    public String toString(){
+        return titulo + " (" + año + ") - " + genero + " - Puntuacion: " + puntuacion;
+    }
+
 }
