@@ -22,4 +22,8 @@ public class listaInteligente {
         }
     }
 
+    public ArrayList<videojuego> obtenerTodos(){
+        return lista;
+    }
+
 }
