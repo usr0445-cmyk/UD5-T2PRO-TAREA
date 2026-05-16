@@ -8,6 +8,13 @@ public class utilidades {
 
 
     public static int pedirEntero(String mensaje){
-        
+        while (true) {
+        try {
+            return Integer.parseInt(JOptionPane.showInputDialog(mensaje));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Valor invalido. Intenta de nuevo.");
+            }
+        }
+
     }
 }
