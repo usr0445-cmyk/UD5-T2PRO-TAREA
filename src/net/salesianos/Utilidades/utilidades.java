@@ -17,4 +17,11 @@ public class utilidades {
         }
 
     }
+
+    public static String pedirTexto(String mensaje) {
+        String texto = JOptionPane.showInputDialog(mensaje);
+        if (texto == null) return "";
+        return texto;
+    }
+
 }
