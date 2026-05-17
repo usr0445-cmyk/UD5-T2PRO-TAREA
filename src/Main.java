@@ -3,7 +3,7 @@ import net.salesianos.Videojuego.videojuego;
 import net.salesianos.Utilidades.utilidades;
 import javax.swing.JOptionPane;
 
-//Esta es la calse principal del programa
+//Esta es la clase principal del programa
 
 public class Main {
     public static void main(String[] args) {
@@ -48,12 +48,17 @@ public class Main {
 
                 } else if (opcion.equals("3")) {
 
+                    int index = utilidades.pedirEntero("Indice que se va a elminar:");
+                    lista.eliminarVideojuego(index);
 
-                    
-                    
+                } else if (opcion.equals("4")) {
+                    lista.ordenarPorPuntuacionDesc();
+                    JOptionPane.showMessageDialog(null, lista.obtenerTodos());
+     
 
+                } else if (opcion.equals("5")) {
+                    salir = true;
                 }
-
             }
 
         }
