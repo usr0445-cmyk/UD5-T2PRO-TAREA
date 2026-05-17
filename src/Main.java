@@ -22,6 +22,25 @@ public class Main {
                 "5. Salir"
             );
 
+            if (opcion == null) {
+                salir = true;
+            } else if (opcion.equals("1")) {
+
+                String titulo = utilidades.pedirTitulo("Titulo: ");
+                String genero = utilidades.pedirGenero("Genero: ");
+                int año = utilidades.pedirAño("Año: ");
+                int puntuacion = utilidades.pedirPuntuacion("Puntuacion: ");
+
+                    videojuego v = new videojuego(titulo, genero, año, puntuacion);
+                    lista.agregarVideojuego(v);
+               
+                } else if (opcion.equals("2")) {
+                    
+
+                }
+
+            }
+
         }
 
 
