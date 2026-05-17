@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         //Aqui usamos la lista inteligente donde se guardaran los videojuegos
-        ListaInteligente lista = new ListaInteligente();
+        listaInteligente lista = new listaInteligente();
 
         //Una variable que controla cuando salir del programa
         boolean salir = false;
@@ -33,10 +33,10 @@ public class Main {
             } else if (opcion.equals("1")) {
 
                 //El metodo utilidades muestra el JOptionPane y validan para que el usuario no rompa esto
-                String titulo = utilidades.pedirTitulo("Titulo: ");
-                String genero = utilidades.pedirGenero("Genero: ");
-                int año = utilidades.pedirAño("Año: ");
-                int puntuacion = utilidades.pedirPuntuacion("Puntuacion: ");
+                String titulo = utilidades.pedirTexto("Titulo: ");
+                String genero = utilidades.pedirTexto("Genero: ");
+                int año = utilidades.pedirEntero("Año: ");
+                int puntuacion = utilidades.pedirEntero("Puntuacion: ");
 
                 //Creamos el objeto videojuego con los datos ingresados y despues se añadira a la lista
                     videojuego v = new videojuego(titulo, genero, año, puntuacion);
@@ -47,10 +47,10 @@ public class Main {
                     //Indice para que pueda edirar el juego
                     int index = utilidades.pedirEntero("Ingrese el indice del videojuego a editar: ");
 
-                    String titulo = utilidades.pedirTitulo("Nuevo titulo: ");
-                    String  genero = utilidades.pedirGenero("Nuevo genero: ");
-                    int año = utilidades.pedirAño("Nuevo año: ");
-                    int puntuacion = utilidades.pedirPuntuacion("Nueva puntuacion: ");
+                    String titulo = utilidades.pedirTexto("Nuevo titulo: ");
+                    String genero = utilidades.pedirTexto("Nuevo genero: ");
+                    int año = utilidades.pedirEntero("Nuevo año: ");
+                    int puntuacion = utilidades.pedirEntero("Nueva puntuacion: ");
 
 
                     videojuego v = new videojuego(titulo, genero, año, puntuacion);
