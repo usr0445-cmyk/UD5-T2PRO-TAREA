@@ -35,6 +35,21 @@ public class Main {
                     lista.agregarVideojuego(v);
                
                 } else if (opcion.equals("2")) {
+
+                    int index = utilidades.pedirEntero("Ingrese el indice del videojuego a editar: ");
+
+                    String titulo = utilidades.pedirTitulo("Nuevo titulo: ");
+                    String  genero = utilidades.pedirGenero("Nuevo genero: ");
+                    int año = utilidades.pedirAño("Nuevo año: ");
+                    int puntuacion = utilidades.pedirPuntuacion("Nueva puntuacion: ");
+
+                    videojuego v = new videojuego(titulo, genero, año, puntuacion);
+                    lista.editarVideojuego(index, v);
+
+                } else if (opcion.equals("3")) {
+
+
+                    
                     
 
                 }
@@ -44,19 +59,5 @@ public class Main {
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-}
+
