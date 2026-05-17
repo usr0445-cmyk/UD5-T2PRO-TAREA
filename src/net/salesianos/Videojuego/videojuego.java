@@ -1,5 +1,7 @@
 package net.salesianos.Videojuego;
 
+// Esta clase representa un videojuego con sus atributos y metodos
+
 public class videojuego {
 
     private String titulo;
